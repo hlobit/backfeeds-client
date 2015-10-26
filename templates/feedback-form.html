@@ -3,7 +3,7 @@
     <form role="form" name="feedbackForm" ng-submit="feedbackForm.$valid && addFeedback()" novalidate>
       <div class="form-group">
         <label>Votre note</label>
-        <div ng-include="'/templates/rating-input.html'"></div>
+        <div ng-include="'templates/rating-input.html'"></div>
       </div>
       <div class="form-group">
         <label for="feedback-content">Votre avis</label>
@@ -16,7 +16,7 @@
       <!-- <div> form is {{ feedbackForm.$valid }}</div> -->
       <div class="preview" ng-show="feedback.rate">
         <h4>Aperçu</h4>
-        <div ng-include="'/templates/feedback.html'"></div>
+        <div ng-include="'templates/feedback.html'"></div>
         <div class="form-group">
           <button type="submit" class="btn btn-primary">Soumettre</button>
         </div>
