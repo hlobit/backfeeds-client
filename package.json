@@ -1,0 +1,52 @@
+{
+  "name": "backfeeds-client",
+  "version": "0.1.0",
+  "description": "Collect the feedbacks for your web product.",
+  "scripts": {
+    "install": "webdriver-manager update",
+    "postinstall": "bower install",
+    "start": "brunch w -s",
+    "dev": "brunch w",
+    "prod": "brunch b -P",
+    "test": "karma start test/karma.conf.js",
+    "test-e2e": "protractor test/protractor-conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hlobit/backfeeds-client"
+  },
+  "author": "Hubert LOBIT",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hlobit/backfeeds-client/issues"
+  },
+  "homepage": "https://github.com/hlobit/backfeeds-client#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "bower": "~1.6.3",
+    "brunch": "~1.8.5",
+	  "browser-sync-brunch": "~0.0.9",
+	  "traceur-brunch": "~1.7.5",
+	  "sass-brunch": "~1.9.1",
+	  "postcss-brunch": "~0.5.0",
+	  "css-brunch": "~1.7.0",
+    "clean-css-brunch": "~1.7.2",
+	  "ng-annotate-brunch": "~1.7.2",
+	  "javascript-brunch": "~1.8.0",
+	  "uglify-js-brunch": "~1.7.8",
+    "karma": "~0.13.14",
+    "karma-chrome-launcher": "0.2.1",
+    "karma-cli": "0.1.1",
+    "karma-firefox-launcher": "~0.1.6",
+    "karma-html2js-preprocessor": "~0.1.0",
+    "karma-jasmine": "0.3.6",
+    "karma-junit-reporter": "~0.3.8",
+    "karma-phantomjs-launcher": "~0.2.1",
+    "karma-requirejs": "~0.2.2",
+    "karma-safari-launcher": "0.1.1",
+    "karma-script-launcher": "~0.1.0",
+    "protractor": "~2.5.1",
+    "selenium-webdriver": "~2.48.0"
+  }
+}

@@ -1,0 +1,31 @@
+.user-container {
+  background-color: #99d0b0;
+  box-shadow: 0 1px 5px #888888;
+  margin: 0 0 20px 0;
+}
+
+.user-row {
+  margin: 20px 0 20px 0;
+  text-align: center;
+
+  .box {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 20px 0 20px;
+  }
+
+  .avatar-box {
+    border: 1px solid #DDD;
+    width: 110px;
+    height: 110px;
+    -webkit-border-radius: 50%; /* Can also be 55px */
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin: 0 auto;
+
+    img {
+      height: 100%;
+      border-radius: 50%;
+    }
+  }
+}

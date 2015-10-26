@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" ng-app="backfeeds">
+
+  <head>
+    <base href="/">
+    <title ng-bind-template="{{ title }}"></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="fragment" content="!"/>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/app.css">
+  </head>
+
+  <body ng-controller="BackfeedsController as backfeeds">
+    <div class="wrapper">
+      <div class="container-fluid user-container" ng-show="isLoggedIn">
+        <user></user>
+      </div>
+      <div class="container main-content">
+        <div ng-view></div>
+      </div>
+      <div class="push"></div>
+    </div>
+
+    <script src="/javascripts/vendor.js"></script>
+    <script src="/javascripts/app.js"></script>
+  </body>
+
+</html>

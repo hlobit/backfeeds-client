@@ -1,0 +1,38 @@
+.action-box {
+  .form-group {
+    margin: 10px 0 0 0;
+  }
+  .form-group:first-child {
+    width:80%;
+  }
+  .form-group:nth-child(2) {
+    width:18%;
+  }
+  .form-group * {
+    width:100%;
+  }
+}
+.comment-list {
+  margin: 10px 0 0 0;
+  padding: 0 10px 0 10px;
+  list-style:none;
+  background-color: #eeeeee;
+  li {
+    padding: 5px 0 5px 0;
+  }
+  li:not(:first-child){
+    border-top:1px dashed grey;
+  }
+  li > div {
+    display:table-cell;
+  }
+  .comment-text p {
+    margin: 0;
+    font-size: small;
+  }
+  .sub-text {
+    color:#aaa;
+    font-family:verdana;
+    font-size:11px;
+  }
+}
