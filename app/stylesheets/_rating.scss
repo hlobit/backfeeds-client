@@ -37,14 +37,14 @@
 .rating-bar {
   width: 80px;
   height: 16px;
-  background: url(/images/stars.png);
+  background: url(/backfeeds-client/images/stars.png);
   background-repeat: repeat-x;
   background-position: 0 0;
   text-align: left;
 
   .rating {
     height: 16px;
-    background: url(/images/stars.png);
+    background: url(/backfeeds-client/images/stars.png);
     background-position: 0 -16px;
     background-repeat: repeat-x;
   }

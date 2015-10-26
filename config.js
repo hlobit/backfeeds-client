@@ -72,7 +72,8 @@ exports.config = {
 	},
 
 	server: {
-		port: 3333
+		port: 3333,
+		base: '/backfeeds-client/'
 	},
 
 	conventions: {

@@ -8,15 +8,15 @@
 
 			$routeProvider
 				.when('/', {
-					templateUrl: '/templates/pages/feedbacks/new.html',
+					templateUrl: 'templates/pages/feedbacks/new.html',
 					controller: 'FeedbackNewController'
 				})
 				.when('/feedbacks', {
-					templateUrl: '/templates/pages/feedbacks/index.html',
+					templateUrl: 'templates/pages/feedbacks/index.html',
 					controller: 'FeedbackListController'
 				})
 				.when('/login', {
-					templateUrl: '/templates/pages/login.html'
+					templateUrl: 'templates/pages/login.html'
 				})
 				.otherwise('/');
 		})

@@ -4,7 +4,7 @@
     .directive('user', function(){
       return {
         restrict: 'E',
-        templateUrl: '/templates/user.html',
+        templateUrl: 'templates/user.html',
         controller: function($scope){
         }
       };
