@@ -1,0 +1,10 @@
+<form name="commentForm" class="form-inline" role="form" ng-controller="CommentNewController"
+                                                         ng-init="initComment(feedback)"
+                                                         ng-submit="commentForm.$valid && addComment(feedback)">
+  <div class="form-group" ng-class="{ 'has-error': commentForm.text.$dirty && commentForm.text.$error.required }">
+    <input name="text" ng-model="comment.text" class="form-control" type="text" placeholder="Votre commentaire" required/>
+  </div>
+  <div class="form-group">
+    <button class="btn btn-default">Ajouter</button>
+  </div>
+</form>

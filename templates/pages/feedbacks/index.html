@@ -1,0 +1,21 @@
+<div class="row feedbacks-row">
+  <div class="col-md-12">
+    <p>
+      <a class="btn btn-primary" href="#" role="button" ng-click="go('/')">Ajouter un avis</a>
+    </p>
+  </div>
+</div>
+
+<div class="row feedbacks-row">
+  <div class="col-md-12">
+    <ul class="list-unstyled">
+      <li ng-repeat="feedback in feedbacks | orderBy:'-useful'">
+        <div ng-include="'/templates/feedback.html'"></div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<p ng-show="!feedbacks.length">
+  Pas de feedbacks pour le moment.
+</p>

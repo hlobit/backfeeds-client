@@ -1,0 +1,11 @@
+<div class="row user-row">
+  <div class="col-md-12">
+    <div class="box avatar-box">
+      <img ng-src="{{ user.avatar_url }}" alt="Avatar">
+    </div>
+    <div class="box user-box">
+      <h3>Bonjour, {{ user.username }} !</h3>
+      <a class="btn btn-default" href="#" role="button" ng-click="logout()">Se déconnecter</a>
+    </div>
+  </div>
+</div>
