@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-md-12">
-    <form role="form" name="feedbackForm" ng-submit="feedbackForm.note.$valid && feedbackForm.rating.$valid && addFeedback()" novalidate>
+    <form role="form" name="feedbackForm" ng-submit="feedbackForm.$valid && addFeedback()" novalidate>
       <div class="form-group">
         <label>Votre note</label>
         <div ng-include="'templates/rating-input.html'"></div>
@@ -8,8 +8,7 @@
       <div class="form-group">
         <label for="feedback-content">Votre avis</label>
         <textarea ng-model="feedback.note"
-                  id="note"
-                  name="note"
+                  id="feedback-content"
                   class="form-control"
                   rows="3">
         </textarea>
