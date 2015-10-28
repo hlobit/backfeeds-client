@@ -39,10 +39,8 @@ exports.config = {
 		stylesheets: {
 			defaultExtension: 'scss',
 			joinTo: {
-				'stylesheets/app.css': [
-					'bower_components/font-awesome/scss/font-awesome.scss',
-					/^app\/stylesheets\/app/
-				]
+				'stylesheets/font-awesome.css': 'bower_components/font-awesome/scss/font-awesome.scss',
+				'stylesheets/app.css': /^app\/stylesheets\/app/
 			}
 		}
 	},
