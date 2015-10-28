@@ -1,22 +1,26 @@
 <blockquote>
-  <div class="vote roundrect pull-right" ng-hide="isPreview">
+  <div class="vote roundrect pull-right" ng-if="!isPreview">
     <div class="increment up" ng-click="setNotation(feedback, 1)"></div>
     <div class="increment down" ng-click="setNotation(feedback, -1)"></div>
     <div class="count">{{ feedback.useful }}</div>
   </div>
+
+  <!-- THIS PART IS SHOWN IN PREVIEW TOO. -->
   <p>
     <div class='rating-bar'>
-      <div class='rating' style='width:{{ feedback.rate*100/5 }}%;'></div>
+      <div class='rating' style='width:{{ feedback.rating*100/5 }}%;'></div>
     </div>
   </p>
   <p>{{ feedback.note }}</p>
   <footer>laissé par <em>{{ feedback.user.username }}</em>, le {{ feedback.created_at | date:'dd/MM/yyyy' }}</footer>
-  <div class="action-box" ng-hide="isPreview">
+  <!-- END -->
+
+  <div class="action-box" ng-if="!isPreview">
     <ul class="comment-list" ng-hide="!feedback.comments.length">
       <li ng-repeat="comment in feedback.comments">
         <div class="comment-text">
           <p>{{ comment.text }}</p>
-          <span class="date sub-text">— laissé par <em>{{ user.username }}</em>, le {{ comment.created_at | date:'dd/MM/yyyy' }}</span>
+          <span class="date sub-text">— laissé par <em>{{ comment.user.username }}</em>, le {{ comment.created_at | date:'dd/MM/yyyy' }}</span>
         </div>
       </li>
     </ul>
