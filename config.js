@@ -23,6 +23,7 @@ exports.config = {
 					'bower_components/angular-route/angular-route.js',
 					'bower_components/angular-resource/angular-resource.js',
 					'bower_components/angular-sanitize/angular-sanitize.js',
+					'bower_components/angular-mocks/angular-mocks.js',
 					/^vendor/
 				],
 				'test/scenarios.js': /^test(\/|\\)e2e/
@@ -38,7 +39,10 @@ exports.config = {
 		stylesheets: {
 			defaultExtension: 'scss',
 			joinTo: {
-				'stylesheets/app.css': /^app\/stylesheets\/app/
+				'stylesheets/app.css': [
+					'bower_components/font-awesome/scss/font-awesome.scss',
+					/^app\/stylesheets\/app/
+				]
 			}
 		}
 	},
@@ -47,16 +51,9 @@ exports.config = {
 		ng_annotate: {
 			pattern: /^app/
 		},
-		traceur: {
-			paths: /^app/,
-			options: {
-				experimental: true
-			}
-		},
 		sass: {
 			options: {
         includePaths: [
-					'bower_components/font-awesome/scss',
 					'bower_components/bootstrap-sass-official/assets/stylesheets'
 				]
 			}

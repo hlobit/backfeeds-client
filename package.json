@@ -3,8 +3,7 @@
   "version": "0.1.0",
   "description": "Collect the feedbacks for your web product.",
   "scripts": {
-    "install": "webdriver-manager update",
-    "postinstall": "bower install",
+    "postinstall": "webdriver-manager update && bower install",
     "start": "brunch w -s",
     "dev": "brunch w",
     "prod": "brunch b -P",
@@ -20,14 +19,13 @@
   "bugs": {
     "url": "https://github.com/hlobit/backfeeds-client/issues"
   },
-  "homepage": "https://github.com/hlobit/backfeeds-client#readme",
+  "homepage": "https://github.com/hlobit/backfeeds-client",
   "dependencies": {
   },
   "devDependencies": {
     "bower": "~1.6.3",
     "brunch": "~1.8.5",
 	  "browser-sync-brunch": "~0.0.9",
-	  "traceur-brunch": "~1.7.5",
 	  "sass-brunch": "~1.9.1",
 	  "postcss-brunch": "~0.5.0",
 	  "css-brunch": "~1.7.0",
