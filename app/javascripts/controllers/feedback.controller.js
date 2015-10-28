@@ -16,9 +16,7 @@
 
       initFeedback();
       $scope.addFeedback = function(){
-        // ! WE USE RATING - WE SEND RATE
-        var feedback = { rate: $scope.feedback.rating, note: $scope.feedback.note };
-        Feedback.save(feedback, function() {
+        Feedback.save($scope.feedback, function() {
           initFeedback();
         });
       };
