@@ -6,7 +6,7 @@
     "postinstall": "webdriver-manager update && bower install",
     "start": "brunch w -s",
     "dev": "brunch w",
-    "prod": "brunch b -P",
+    "prod": "rm -rf public && brunch b -P && ./deploy.sh && rm -rf public",
     "test": "karma start test/karma.conf.js",
     "test-e2e": "protractor test/protractor-conf.js"
   },
