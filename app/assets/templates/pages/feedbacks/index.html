@@ -6,7 +6,11 @@
   </div>
 </div>
 
-<div class="row feedbacks-row">
+<p ng-show="feedbacks.length == 0">
+  Pas de feedbacks pour le moment.
+</p>
+
+<div class="row feedbacks-row" ng-show="feedbacks.length > 0">
   <div class="col-md-12">
     <ul class="list-unstyled">
       <li ng-repeat="feedback in feedbacks | orderBy:'-useful'">
@@ -15,7 +19,3 @@
     </ul>
   </div>
 </div>
-
-<p ng-show="feedbacks.length > 0">
-  Pas de feedbacks pour le moment.
-</p>
