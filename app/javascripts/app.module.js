@@ -2,10 +2,7 @@
 
 	// Declare app level module which depends on filters, and services
 	angular.module('backfeeds', ['ngSanitize', 'ngResource', 'ngRoute'])
-		.config(function($locationProvider, $routeProvider) {
-			$locationProvider.hashPrefix('!');
-			$locationProvider.html5Mode(true);
-
+		.config(function($routeProvider) {
 			$routeProvider
 				.when('/', {
 					templateUrl: 'templates/pages/feedbacks/new.html',
